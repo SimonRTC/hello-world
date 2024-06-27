@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: sample/complex/overlays/production
+    path: samples/complex/overlays/production
     repoURL: https://github.com/SimonRTC/hello-world.git
     targetRevision: HEAD
