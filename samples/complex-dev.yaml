@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helloworld-complex
+  namespace: gitops
+spec:
+  destination:
+    namespace: hello-world
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: sample/complex/overlays/development
+    repoURL: https://github.com/SimonRTC/hello-world.git
+    targetRevision: HEAD
